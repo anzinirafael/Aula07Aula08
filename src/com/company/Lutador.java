@@ -11,7 +11,7 @@ public class Lutador implements ControllerLutador{
     private int derrotas;
     private int empates;
 
-    private String getNome() {
+    protected String getNome() {
         return nome;
     }
 
@@ -52,7 +52,7 @@ public class Lutador implements ControllerLutador{
         setCategoria();
     }
 
-    private String getCategoria() {
+    protected String getCategoria() {
         return categoria;
     }
 

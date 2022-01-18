@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        //Definição de lutadores participantes
         Lutador lutador1 = new Lutador("Pretty Boy", "França",
                 31, 1.75f, 68.9f,11, 2, 1);
         Lutador lutador2 = new Lutador("Putscript", "Brasileiro",
@@ -15,5 +16,8 @@ public class Main {
                 , 5, 4, 3);
         Lutador lutador6 = new Lutador("Nerdaard", "EUA", 30, 1.81f, 105.7f,
                 12, 2, 4);
+        Luta luta1 = new Luta(lutador1, lutador2, 3, false);
+        luta1.marcarLuta(lutador1, lutador2);
+        luta1.lutar();
     }
 }
